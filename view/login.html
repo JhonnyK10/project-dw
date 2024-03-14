@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title></title>
+        <script src="../script/cadastro.js"></script>    
+        <link rel="stylesheet" type="text/css" href="../css/index.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" media="screen" />       
+    </head>
+    <body>
+        <header>
+            <a href="../index.html">Logo</a>
+            <ul>
+                <li><a href="">Cadastro</li></a> 
+            </ul>
+        </header>
+        <section class="form">
+            <h1 style="text-align: center;">Faça o seu login</h1>
+            <div class="formulario">
+                <form class="formDados" id="form-cadastro">
+                    <label for="lname">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+            
+                    <label for="lname">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Coloque a senha">
+                    <input type="button" value="Submit" onclick="fazerLogin()">
+            </div>
+            
+        </section>
+        
+        <script src="/script/login.js"></script>
+    </body>
+</html>
