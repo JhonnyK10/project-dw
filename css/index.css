@@ -50,13 +50,15 @@ body{
     align-items: center;
 }
 
-.logo{
+.logo a{
     flex: 20%;
     text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
     margin-left: 10%;
 }
 
-.logo h1{
+.logo a{
     font-family: 'Lobster', cursive;
     color: #1e0f79;
     font-size: 34px;
@@ -147,61 +149,6 @@ body{
 
 .header img{
     max-width: 100%;
-}
-
-section{
-    display: inline-block;
-    margin-top: 80px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 5%;
-    text-align: center;
-}
-
-section h2{
-    width: 100%;
-    font-size: 50px;
-    margin: 0;
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
-    color: #16096b;
-}
-
-.servicos{
-    display: inline-block;
-    margin-top: 5%;
-}
-
-.card{
-    display: inline-block;
-    width: 30%;
-    padding: 20px;
-    margin: 1%;
-    border: 1px solid #FF2978;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.texto-oculto{
-    display: none;
-}
-
-.card:hover{
-    background: #FF2978;
-    color: white;
-    padding: 40px;
-}
-
-.card:hover img{
-    display: none;
-}
-
-.card:hover .card-text{
-    display: none;
-}
-
-.card:hover .texto-oculto{
-    display: block;
 }
 
 footer{
