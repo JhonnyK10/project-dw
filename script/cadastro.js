@@ -1,10 +1,10 @@
-const url = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/user';
-
 async function cadastroUsuario() {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('senha').value; // Corrigido de password para senha
-    var cpf_cnpj = document.getElementById('cpf_cnpj').value;
+    const url = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/user';
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('senha').value; // Corrigido de password para senha
+    let cpf_cnpj = document.getElementById('cpf_cnpj').value;
+    let dataNasc = document.getElementById('dataNasc').value;
 
     if (name === "" || email === "" || password === "" || cpf_cnpj === "") {
         alert("Por favor, preencha todos os campos.");
@@ -20,26 +20,20 @@ async function cadastroUsuario() {
             "password": password,
             "cpf_cnpj": cpf_cnpj,
             "terms": 1,
-            "birthday": "2000-10-12"
+            "birthday": dataNasc,
         }),
         headers: {
             'Content-Type': 'application/json'
         }
     });
-    if (cpf_cnpj < cpf_cnpj.le) {
-
-    }
     let data = await resposta.json();
 
+    if(data.data && data.data?.statusCode  === 422){
+        alert(data.data.statusCode)
 
-    if (data.data.statusCode === 422) { 
-        alert('Digite o CPF correto');
-        return data;
+        return false
     }
-    alert("Cadastro feito com sucesso");
+    alert("cadastro feito com sucesso");
     window.location.href = "login.html";
-
-    print(data)
-
     document.getElementById('form-cadastro').reset();
 }

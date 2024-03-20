@@ -28,7 +28,7 @@ body{
 
 .logo a{
     font-family: 'Lobster', cursive;
-    color: #1e0f79;
+    color: rgb(31, 31, 31);
     font-size: 34px;
     text-align: left;
 }
@@ -40,29 +40,32 @@ body{
 }
 
 .menu a{
-    color: #1e0f79;
+    color: rgb(31, 31, 31);
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 16px;
+    padding: 10px 25px;
 }
 
 .menu a:hover{
-    color: #FF2978;
-    border-top: 4px solid #16096b;
-}
-
-#botao{
-    background: #16096b;
+    background: rgb(31, 31, 31);
     padding: 10px 25px;
     color: white;
     border-radius: 5px;
+}
+
+#botao{
+    background: white;
+    padding: 10px 25px;
+    color: black;
+    border: black solid 5px;
     margin-right: 10%;
     margin-left: 5%;
+    border-radius: 5px;
 }
 
 #botao:hover{
-    border: none;
-    background: #FF2978;
+    background: black;
+    color: white;
 }
 
 .header{
@@ -95,7 +98,7 @@ body{
 }
 
 .contact-btn:hover{
-    background: #16096b;
+    background: black;
 }
 
 .img-headline{
@@ -107,7 +110,7 @@ body{
 .headline h3{
     font-weight: 900;
     font-size: 20px;
-    color: #16096b;
+    color: black;
     letter-spacing: 15px;
     padding: 0;
     margin: 0;
@@ -116,7 +119,7 @@ body{
 .headline h2{
     font-weight: 900;
     font-size: 80px;
-    color: #16096b;
+    color: black;
     padding: 0;
     margin: 0;
 }
@@ -140,7 +143,7 @@ section h2{
     margin: 0;
     font-family: 'Lobster', cursive;
     font-weight: bold;
-    color: #16096b;
+    color: black;
 }
 
 .servicos{
@@ -153,9 +156,10 @@ section h2{
     width: 30%;
     padding: 20px;
     margin: 1%;
-    border: 1px solid #FF2978;
+    border: 4px solid #000000;
     border-radius: 10px;
     cursor: pointer;
+    border: black 1px solid;
 }
 
 .texto-oculto{
@@ -163,13 +167,11 @@ section h2{
 }
 
 .card:hover{
-    background: #FF2978;
+    background: #000000;
     color: white;
-    padding: 40px;
-}
-
-.card:hover img{
-    display: none;
+    transition-duration: 0.3s;
+    border: 20px;
+    
 }
 
 .card:hover .card-text{
@@ -178,14 +180,15 @@ section h2{
 
 .card:hover .texto-oculto{
     display: block;
+    transition-delay: s;
 }
 
 footer{
     margin-top: 100px;
     height: 400px;
-    background-image: linear-gradient(180deg, #16096b, #090422, black);
+    background-image: linear-gradient(110deg, rgb(30, 30, 30), #2f2f2f, black);
     text-align: center;
-    border-top: 5px solid #FF2978;
+    border-top: 5px solid #272727;
 }
 
 .logo-rodape{
@@ -215,3 +218,5 @@ b{
 .whats img{
     width: 60px;
 }
+
+
