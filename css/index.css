@@ -135,6 +135,12 @@ body{
     background: rgb(31, 31, 31);
 }
 
+.img-headline{
+    margin-left: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
 .headline h3{
     font-weight: 900;
     font-size: 20px;
@@ -186,7 +192,6 @@ b{
     color: white;
     font-size: 34px;
 }
-
 
 .logo_bot {
     width: 80px;

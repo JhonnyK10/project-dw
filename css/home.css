@@ -98,7 +98,7 @@ body{
 }
 
 .contact-btn:hover{
-    background: black;
+    background: rgb(31, 31, 31);
 }
 
 .img-headline{
@@ -110,16 +110,20 @@ body{
 .headline h3{
     font-weight: 900;
     font-size: 20px;
-    color: black;
+    color: rgb(31, 31, 31);
     letter-spacing: 15px;
     padding: 0;
     margin: 0;
 }
 
+.headline p{
+    text-align: justify;
+}
+
 .headline h2{
     font-weight: 900;
     font-size: 80px;
-    color: black;
+    color: rgb(31, 31, 31);
     padding: 0;
     margin: 0;
 }
@@ -171,7 +175,6 @@ section h2{
     color: white;
     transition-duration: 0.3s;
     border: 20px;
-    
 }
 
 .card:hover .card-text{
@@ -192,7 +195,7 @@ footer{
 }
 
 .logo-rodape{
-    padding: 100px;
+    padding: 50px;
 }
 
 .logo-rodape p{
@@ -209,14 +212,7 @@ b{
     font-size: 34px;
 }
 
-.whats{
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
+.logo_bot {
+    width: 80px;
+    height: 80px;
 }
-
-.whats img{
-    width: 60px;
-}
-
-
