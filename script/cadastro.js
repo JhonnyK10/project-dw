@@ -28,12 +28,19 @@ async function cadastroUsuario() {
     });
     let data = await resposta.json();
 
-    if(data.data && data.data?.statusCode  === 422){
-        alert(data.data.statusCode)
-
-        return false
+    console.log(data);
+    if(data.data.statusCode == 422){
+        if(data.data.errors.cpf_cnpj){
+           alert("O CPF já está sendo utilizado");
+           return 
+        }
+        if(data.data.errors.email){
+            alert("O email já está sendo utilizado");
+            return 
+         }
+             
     }
-    alert("cadastro feito com sucesso");
+    
     window.location.href = "login.html";
     document.getElementById('form-cadastro').reset();
 }
