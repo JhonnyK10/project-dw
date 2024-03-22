@@ -38,9 +38,10 @@ async function cadastroUsuario() {
             alert("O email já está sendo utilizado");
             return 
          }
+        
              
     }
-    
+    alert("Cadastro feito com sucesso!")
     window.location.href = "login.html";
     document.getElementById('form-cadastro').reset();
 }
