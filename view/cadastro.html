@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/cadastro.css" />
-  </head>
-  <body>
-    <section class="container">
-      <header>Cadastro</header>
-      <form action="#" class="form">
-        <div class="input-box">
-          <label>Nome</label>
-          <input type="text" placeholder="Nome Completo" required />
-        </div>
-        <div class="input-box">
-          <label>Email</label>
-          <input type="text" placeholder="Email" required />
-        </div>
-        <div class="input-box">
-            <label>Senha</label>
-            <input type="password" placeholder="Senha" required />
-        </div>
-        <div class="input-box">
-            <label>CPF ou CNPJ</label>
-            <input type="text" placeholder="CPF ou CNPJ" required />
-          </div>
-        <div class="input-box">
-          <label>Data de Nascimento</label>
-          <input type="date" placeholder="Data de Nascimento" required />
-        </div>
-        <button>Cadastrar-se</button>
-      </form>
-    </section>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../Imagens/logo panda.png.png" type="image/png">
+  <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+  <section class="container">
+    <header>Cadastro do Membro</header>
+    <form action="#" class="form">
+      <div class="infos-box">
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Nome Completo" required>
+      </div>
+      <div class="infos-box">
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Email" required>
+      </div>
+      <div class="infos-box">
+          <label>Senha</label>
+          <input type="password" name="password" placeholder="Senha" required>
+      </div>
+      <div class="infos-box">
+          <label>CPF ou CNPJ</label>
+          <input type="text" name="cpf_cnpj" placeholder="CPF ou CNPJ" required>
+      </div>
+      <div class="infos-box">
+        <label>Data de Nascimento</label>
+        <input type="date" name="birthday" placeholder="Data de Nascimento" required>
+      </div>
+      <div class="infos-box">
+        <label>Concorda com os Termos?</label>
+        <select name="terms">
+          <option value="1">Sim</option>
+          <option value="0">Não</option>                      
+        </select> 
+      </div>
+      <input class="botao" type="button" value="Cadastrar-se" onclick="cadastroUsuario()">
+    </form>
+  </section>
+  <script src="/script/cadastro.js"></script>
+</body>
 </html>

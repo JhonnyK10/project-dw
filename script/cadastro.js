@@ -37,9 +37,7 @@ async function cadastroUsuario() {
         if(data.data.errors.email){
             alert("O email já está sendo utilizado");
             return 
-         }
-        
-             
+         }         
     }
     alert("Cadastro feito com sucesso!")
     window.location.href = "login.html";

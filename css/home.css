@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -44,6 +45,7 @@ body{
     text-decoration: none;
     font-size: 20px;
     padding: 10px 25px;
+    transition-duration: 0.6s;
 }
 
 .menu a:hover{
@@ -51,21 +53,6 @@ body{
     padding: 10px 25px;
     color: white;
     border-radius: 5px;
-}
-
-#botao{
-    background: white;
-    padding: 10px 25px;
-    color: black;
-    border: black solid 5px;
-    margin-right: 10%;
-    margin-left: 5%;
-    border-radius: 5px;
-}
-
-#botao:hover{
-    background: black;
-    color: white;
 }
 
 .header{
@@ -83,7 +70,6 @@ body{
 }
 
 .headline p{
-    color: gray;
     text-align: left;
 }
 
@@ -132,8 +118,10 @@ body{
     max-width: 100%;
 }
 
-section{
-    display: inline-block;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 80px;
     margin-left: 5%;
     margin-right: 5%;
@@ -149,48 +137,34 @@ section h2{
     font-weight: bold;
     color: black;
 }
-
 .servicos{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 5%;
 }
 
 .card{
-    display: inline-block;
-    width: 70%;
+    width: 45%; 
+    min-width: 900px; 
+    max-width: 400px; 
     padding: 20px;
-    margin: 1%;
-    border: 4px solid #000000;
+    margin: 10px; 
+    border: 2px solid #000000; 
     border-radius: 10px;
     cursor: pointer;
-    border: black 1px solid;
-
-}
-
-.card:not(:hover){
-    display: inline-block;
-    width: 70%;
-    padding: 20px;
-    margin: 1%;
-    border: 4px solid #000000;
-    border-radius: 10px;
-    cursor: pointer;
-    border: black 1px solid;
     transition-duration: 0.6s;
-}
-
-.texto-oculto{
-    display: none;
 }
 
 .card:hover{
     background: #000000;
     color: white;
     transition-duration: 0.7s;
-    border: 20px;
-    padding: 40px;
 }
 
+.texto-oculto{
+    display: none;
+}
 
 .card:hover .card-text{
     display: none;
@@ -198,8 +172,8 @@ section h2{
 
 .card:hover .texto-oculto{
     display: block;
-    transition-delay: s;
 }
+
 
 footer{
     margin-top: 100px;

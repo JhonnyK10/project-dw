@@ -1,5 +1,3 @@
-
-
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -14,13 +12,11 @@ body:hover{
     transition-duration: 1.5s;
 }
 
-
 .img-headline{
     margin-left: 10%;
     text-align: center;
     height: 100%;
 }
-
 
 .header img{
     max-width: 100%;
