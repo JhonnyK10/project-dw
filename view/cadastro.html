@@ -9,37 +9,37 @@
 <body>
   <section class="container">
     <header>Cadastro do Membro</header>
-    <form action="#" class="form">
+    <form class="form" id="form-cadastro">
       <div class="infos-box">
-        <label>Nome</label>
-        <input type="text" name="name" placeholder="Nome Completo" required>
+        <label for="name" >Nome</label>
+        <input type="text" id="name" name="name" placeholder="Nome Completo" required>
       </div>
       <div class="infos-box">
-        <label>Email</label>
-        <input type="text" name="email" placeholder="Email" required>
+        <label form="lname" >Email</label>
+        <input type="email"  id="email"  name="email" placeholder="Email" required>
       </div>
+      <div class="infos-box">
+        <label form="lname" >CPF ou CNPJ</label>
+        <input type="text" id="cpf_cnpj" name="cpf_cnpj" placeholder="CPF ou CNPJ" required>
+    </div>
       <div class="infos-box">
           <label>Senha</label>
-          <input type="password" name="password" placeholder="Senha" required>
-      </div>
-      <div class="infos-box">
-          <label>CPF ou CNPJ</label>
-          <input type="text" name="cpf_cnpj" placeholder="CPF ou CNPJ" required>
+          <input type="password" id="senha"  name="senha" placeholder="Senha" required>
       </div>
       <div class="infos-box">
         <label>Data de Nascimento</label>
-        <input type="date" name="birthday" placeholder="Data de Nascimento" required>
+        <input type="date" id="dataNasc" name="dataNasc" placeholder="Data de Nascimento" required>
       </div>
       <div class="infos-box">
-        <label>Concorda com os Termos?</label>
-        <select name="terms">
+        <label for="user_type" >Concorda com os Termos?</label>
+        <select id="user_type" name="user_type">
           <option value="1">Sim</option>
           <option value="0">Não</option>                      
         </select> 
       </div>
-      <input class="botao" type="button" value="Cadastrar-se" onclick="cadastroUsuario()">
+      <input type="button"  class="botao"  value="Cadastrar-se" onclick="cadastroUsuario()">
     </form>
   </section>
-  <script src="/script/cadastro.js"></script>
+  <script src="../script/cadastro.js"></script>
 </body>
 </html>

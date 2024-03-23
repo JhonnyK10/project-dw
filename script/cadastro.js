@@ -2,7 +2,7 @@ async function cadastroUsuario() {
     const url = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/user';
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
-    let password = document.getElementById('senha').value; // Corrigido de password para senha
+    let password = document.getElementById('senha').value; 
     let cpf_cnpj = document.getElementById('cpf_cnpj').value;
     let dataNasc = document.getElementById('dataNasc').value;
 
@@ -34,12 +34,13 @@ async function cadastroUsuario() {
            alert("O CPF já está sendo utilizado");
            return 
         }
-        if(data.data.errors.email){
+       if(data.data.errors.email){
             alert("O email já está sendo utilizado");
-            return 
-         }         
+            return
+         } 
     }
-    alert("Cadastro feito com sucesso!")
-    window.location.href = "login.html";
+    alert("Cadastro feito com sucesso!");
+    
+   // window.location.href = "login.html";
     document.getElementById('form-cadastro').reset();
 }
