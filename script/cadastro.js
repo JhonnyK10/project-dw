@@ -32,12 +32,17 @@ async function cadastroUsuario() {
     if(data.data.statusCode == 422){
         if(data.data.errors.cpf_cnpj && data.data.errors.email){
             alert("O CPF e o email já estão sendo utilizados");
-        } else if(data.data.errors.cpf_cnpj){
-           alert("O CPF já está sendo utilizado");
-        } else if(data.data.errors.email){
+
+        }else if(data.data.errors.cpf_cnpj){
+            alert("O CPF já está sendo utilizado");
+    
+        }else if(data.data.errors.email){
             alert("O email já está sendo utilizado");
+        
+        }else if (data.data.errors) {
+            alert("O CPF está inválido")
         } 
-        return; // Retorna após exibir o alerta de erro
+        return; 
     }
     
     alert("Cadastro feito com sucesso!");
