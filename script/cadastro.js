@@ -41,6 +41,6 @@ async function cadastroUsuario() {
     }
     alert("Cadastro feito com sucesso!");
     
-   // window.location.href = "login.html";
+    window.location.href = "login.html";
     document.getElementById('form-cadastro').reset();
 }
