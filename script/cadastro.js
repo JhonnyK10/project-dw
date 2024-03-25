@@ -32,19 +32,15 @@ async function cadastroUsuario() {
     if(data.data.statusCode == 422){
         if(data.data.errors.cpf_cnpj && data.data.errors.email){
             alert("O CPF e o email já estão sendo utilizados");
-            return 
-         }
-        if(data.data.errors.cpf_cnpj){
+        } else if(data.data.errors.cpf_cnpj){
            alert("O CPF já está sendo utilizado");
-           return 
-        }
-       if(data.data.errors.email){
+        } else if(data.data.errors.email){
             alert("O email já está sendo utilizado");
-            return
-         } 
+        } 
+        return; // Retorna após exibir o alerta de erro
     }
-    alert("Cadastro feito com sucesso!");
     
+    alert("Cadastro feito com sucesso!");
     window.location.href = "login.html";
     document.getElementById('form-cadastro').reset();
 }
