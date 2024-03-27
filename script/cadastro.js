@@ -31,17 +31,20 @@ async function cadastroUsuario() {
     console.log(data);
     if(data.data.statusCode == 422){
         if(data.data.errors.cpf_cnpj && data.data.errors.email){
-            alert("O CPF e o email já estão sendo utilizados");
+            alert("O CPF e o email já estão sendo utilizados!");
 
         }else if(data.data.errors.cpf_cnpj){
-            alert("O CPF já está sendo utilizado");
+            alert("O CPF já está sendo utilizado!");
     
         }else if(data.data.errors.email){
-            alert("O email já está sendo utilizado");
+            alert("O email já está sendo utilizado!");
         
+        }else if(data.data.errors.password){
+            alert("A senha precisa ter ao menos 6 caracteres!")
+       
         }else if (data.data.errors) {
-            alert("O CPF está inválido")
-        } 
+            alert("O CPF está inválido!")
+        }
         return; 
     }
     
