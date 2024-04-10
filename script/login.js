@@ -22,12 +22,15 @@ async function loginUsuario() {
 });
     let data = await resposta.json();
     
-        if (data.data.errors){
-            alert(data.data.errors);
-            return;
-        }
-        
-    alert("Login feito com sucesso");
-    //window.location.href = "home.html";
+    if (data.access_token) {
+  
+        localStorage.setItem('token', data.access_token);
+
+        alert("Login feito com sucesso");
+        window.location.href = "home.html";
+        document.getElementById('form').reset();
+    } else {
+        alert("Email ou senha incorreto, verifique suas informações");
+    }
     document.getElementById('form').reset();
 }
