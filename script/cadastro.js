@@ -1,5 +1,5 @@
 async function cadastroUsuario() {
-    const url = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/user';
+    const url = 'https://go-wash-api.onrender.com/api/user';
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('senha').value; 
