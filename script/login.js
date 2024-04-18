@@ -1,4 +1,4 @@
-const url = 'https://go-wash-api.onrender.com/api/user';
+const url = 'https://go-wash-api.onrender.com/api/login';
 
 async function loginUsuario() {
    let email = document.getElementById('email').value;
@@ -21,16 +21,14 @@ async function loginUsuario() {
     }
 });
     let data = await resposta.json();
-    
     if (data.access_token) {
   
         localStorage.setItem('token', data.access_token);
 
         alert("Login feito com sucesso");
-        window.location.href = "home.html";
+        window.location.href = "view/home.html";
         document.getElementById('form').reset();
     } else {
         alert("Email ou senha incorreto, verifique suas informações");
     }
-    document.getElementById('form').reset();
 }

@@ -1,207 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-*{
-    box-sizing: border-box;
-}
-
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 1.5s;
 }
 
-.navbar{
-    display: flex;
-    flex-flow: row wrap;
-    height: 100px;
-    background: white;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo a{
-    flex: 20%;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    margin-left: 10%;
-}
-
-.logo a{
-    font-family: 'Lobster', cursive;
-    color: rgb(31, 31, 31);
-    font-size: 34px;
-    text-align: left;
-}
-
-.menu{
-    flex: 70%;
-    text-align: right;
-    padding: 20px;
-}
-
-.menu a{
-    color: rgb(31, 31, 31);
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px 25px;
-    transition-duration: 0.6s;
-}
-
-.menu a:hover{
-    background: rgb(31, 31, 31);
-    padding: 10px 25px;
-    color: white;
-    border-radius: 5px;
-}
-
-.header{
-    display: flex;
-    flex-flow: row wrap;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-}
-
-.headline{
-    flex: 40%;
-    margin-left: 10%;
-}
-
-.headline p{
-    text-align: left;
-}
-
-.contact-btn{
-    display: inline-block;
-    background: #FF2978;
-    padding: 20px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.contact-btn:hover{
-    background: rgb(31, 31, 31);
+body:hover{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(20, 20, 20);
+    transition-duration: 1.5s;
 }
 
 .img-headline{
-    margin-right: 10%;
-    flex: 40%;
+    margin-left: 10%;
     text-align: center;
-}
-
-.headline h3{
-    font-weight: 900;
-    font-size: 20px;
-    color: rgb(31, 31, 31);
-    letter-spacing: 15px;
-    padding: 0;
-    margin: 0;
-}
-
-.headline p{
-    text-align: justify;
-}
-
-.headline h2{
-    font-weight: 900;
-    font-size: 80px;
-    color: rgb(31, 31, 31);
-    padding: 0;
-    margin: 0;
+    height: 100%;
 }
 
 .header img{
     max-width: 100%;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 5%;
-    text-align: center;
-}
-
-section h2{
-    width: 100%;
-    font-size: 50px;
-    margin: 0;
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
-    color: black;
-}
-.servicos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 40%;
     margin-top: 5%;
 }
 
-.card{
-    width: 45%; 
-    min-width: 900px; 
-    max-width: 400px; 
-    padding: 20px;
-    margin: 10px; 
-    border: 2px solid #000000; 
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0.6s;
+.header img:hover{
+    width: 50%;
+    transition-duration: 0.3s;
+    margin-top: 0.5%;
 }
 
-.card:hover{
-    background: #000000;
-    color: white;
-    transition-duration: 0.7s;
-}
-
-.texto-oculto{
-    display: none;
-}
-
-.card:hover .card-text{
-    display: none;
-}
-
-.card:hover .texto-oculto{
-    display: block;
-}
-
-
-footer{
-    margin-top: 100px;
-    height: 400px;
-    background-image: linear-gradient(110deg, rgb(30, 30, 30), #2f2f2f, black);
-    text-align: center;
-    border-top: 5px solid #272727;
-}
-
-.logo-rodape{
-    padding: 50px;
-}
-
-.logo-rodape p{
-    color: white;
-}
-
-b{
-    color: white;
-}
-
-.agencia{
-    font-family: 'Lobster', cursive;
-    color: white;
-    font-size: 34px;
-}
-
-.logo_bot {
-    width: 80px;
-    height: 80px;
+.header img:not(:hover){
+    width: 40%;
+    transition-duration: 0.3s;
 }
