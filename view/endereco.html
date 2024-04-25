@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Imagens/logo panda.png.png" type="image/png">
-    <title>Endereco Pandas da Fiel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../Imagens/logo panda.png.png" type="image/png">
+  <link rel="stylesheet" href="../css/endereco.css">
 </head>
 <body>
-    aqui ainda nao sei o q eh pra fazer
-    <script src="../script/endereco.js"></script>
+  <section class="container">
+    <header>Cadastro de endereço</header>
+    <form class="form" id="form-cadastro">
+      <div class="infos-box">
+        <label for="name">Titulo</label>
+        <input type="text" id="title" name="name" placeholder="Titulo" required>
+      </div>
+      <div class="infos-box">
+        <label form="lname">CEP</label>
+        <input type="text"  id="cep"  name="email" placeholder="CEP" required>
+      </div>
+      <div class="infos-box">
+        <label form="lname">Endereço</label>
+        <input type="text" id="address" name="Endereço" placeholder="ENDEREÇO" required>
+    </div>
+      <div class="infos-box">
+          <label>Número</label>
+          <input type="text" id="number"  name="senha" placeholder="NÚMERO" required>
+      </div>
+      <div class="infos-box">
+        <label>Complemento</label>
+        <input type="text" id="complement" name="dataNasc" placeholder="COMPLEMENTO" required>
+      </div>
+      <input type="button"  class="botao"  value="Cadastrar-se" onclick="cadastroUsuario()">
+    </form>
+  </section>
+  <script src="../script/enderco.js"></script>
 </body>
 </html>

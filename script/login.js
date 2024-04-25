@@ -26,7 +26,7 @@ async function loginUsuario() {
         localStorage.setItem('token', data.access_token);
 
         alert("Login feito com sucesso");
-        window.location.href = "view/home.html";
+        window.location.href = "home.html";
         document.getElementById('form').reset();
     } else {
         alert("Email ou senha incorreto, verifique suas informações");

@@ -5,13 +5,6 @@ body{
     transition-duration: 1.5s;
 }
 
-body:hover{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(20, 20, 20);
-    transition-duration: 1.5s;
-}
-
 .img-headline{
     margin-left: 10%;
     text-align: center;
@@ -33,4 +26,46 @@ body:hover{
 .header img:not(:hover){
     width: 40%;
     transition-duration: 0.3s;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+.logo a{
+    flex: 20%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 10%;
+}
+
+.logo a{
+    font-family: 'Lobster', cursive;
+    color: rgb(31, 31, 31);
+    font-size: 34px;
+    text-align: left;
+}
+.menu{
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    transition-duration: 0.6s;
+}
+
+.menu a:hover{
+    background: rgb(31, 31, 31);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
 }
