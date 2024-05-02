@@ -7,8 +7,11 @@ async function cadastroEndereco(){
     let complement = document.getElementById('complement').value;
 
     let token = localStorage.getItem('token');
-}
 
+    if (title === "" || cep === "" || address === "" || number === "" || complement === "") {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
 
 let resposta = await fetch(url, {
     method: "POST",
@@ -16,7 +19,6 @@ let resposta = await fetch(url, {
         "title": title,
         "cep": cep,
         "address": address,
-        "password": password,
         "number": number,
         "complement": complement,
     }),
@@ -26,3 +28,10 @@ let resposta = await fetch(url, {
     }
 });
 let data = await resposta.json();
+
+console.log(data)
+
+alert("Cadastro feito com sucesso!");
+window.location.href = "home.html";
+
+}
