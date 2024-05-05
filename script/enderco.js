@@ -6,7 +6,9 @@ async function cadastroEndereco(){
     let number = document.getElementById('number').value;
     let complement = document.getElementById('complement').value;
 
-    let token = localStorage.getItem('token');
+    let user = localStorage.getItem('user')
+    let token = JSON.parse(user).access_token;
+
 
     if (title === "" || cep === "" || address === "" || number === "" || complement === "") {
         alert("Por favor, preencha todos os campos.");
@@ -29,9 +31,8 @@ let resposta = await fetch(url, {
 });
 let data = await resposta.json();
 
-console.log(data)
-
 alert("Cadastro feito com sucesso!");
 window.location.href = "home.html";
+console.log(data)
 
 }

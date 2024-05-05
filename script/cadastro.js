@@ -24,6 +24,7 @@ async function cadastroUsuario() {
         }),
         headers: {
             'Content-Type': 'application/json'
+            
         }
     });
     let data = await resposta.json();
