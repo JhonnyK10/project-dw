@@ -19,7 +19,7 @@ body{
     align-items: center;
 }
 
-.logo a{
+.logo h1{
     flex: 20%;
     text-align: center;
     text-decoration: none;
@@ -27,7 +27,7 @@ body{
     margin-left: 10%;
 }
 
-.logo a{
+.logo h1{
     font-family: 'Lobster', cursive;
     color: rgb(31, 31, 31);
     font-size: 34px;
