@@ -8,16 +8,43 @@
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
+    <table id="weather-table">
+    </table>    
     <nav class="navbar">
+        
         <div class="logo">
             <a href="../index.html">Pandas da Fiel</a>
         </div>
         <div class="menu">
-            <a href="../view/endereco.html">Cadastrar endereço</a>                                                     
+            <a href="../view/endereco.html">Cadastrar endereço</a>                                                 
         </div>
     </nav>  
+    
     <h1 class="table_dd">Listagem de Endereço!</h1>
     <div id="endereco-table"></div>
     <script src="../script/home.js"></script>
+    <script src="../script/weather.js"></script>
 </body>
+
+<style>
+    table{
+    flex: 70%;
+    text-align: right;
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    transition-duration: 0.6s;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+table:hover{
+    background: rgb(31, 31, 31);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+}
+</style>
 </html>
